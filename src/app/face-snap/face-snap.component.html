@@ -3,5 +3,7 @@
   <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" />
   <p>{{ faceSnap.description }}</p>
   <p>Mis en ligne le {{ faceSnap.createdAt }}</p>
-  <p>🤌 {{ faceSnap.snaps }}</p>
+  <p>
+    <button (click)="onSnap()">{{textButton}}</button>
+    🤌 {{ faceSnap.snaps }}</p>
 </div>
