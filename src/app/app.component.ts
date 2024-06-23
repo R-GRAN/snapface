@@ -9,6 +9,7 @@ import { FaceSnap } from './models/face-snap';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
+
 export class AppComponent implements OnInit {
   newFaceSnap!: FaceSnap;
 
