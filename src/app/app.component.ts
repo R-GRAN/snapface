@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
       'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
       "Mon meilleur ami d'enfance",
       new Date(),
-      0
+      148
     );
   }
 }
