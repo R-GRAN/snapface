@@ -10,6 +10,24 @@ import { FaceSnap } from '../models/face-snap';
 })
 export class FaceSnapComponent implements OnInit {
   @Input() faceSnap!: FaceSnap;
+  textButton!: string;
+  alreadySnapped!: boolean;
+  ngOnInit(): void {
+    this.textButton = 'Oh Snap That !';
+    this.alreadySnapped = false;
+  }
+  onSnap(): void {
+    !this.alreadySnapped ? this.snap() : this.unSnap();
+  }
 
-  ngOnInit(): void {}
+  snap(): void {
+    this.faceSnap.addSnap();
+    this.textButton = ' Oups, UnSnap ! ';
+    this.alreadySnapped = true;
+  }
+  unSnap(): void {
+    this.faceSnap.removeSnap();
+    this.textButton = 'Oh Snap That ! ';
+    this.alreadySnapped = false;
+  }
 }
