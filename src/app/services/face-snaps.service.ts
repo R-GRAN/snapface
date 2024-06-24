@@ -19,7 +19,7 @@ export class FaceSnapsService {
       'un développeur curieux',
       new Date(),
       199
-    ),
+    ).withLocation("Strasbourg"),
     new FaceSnap(
       'Votre prochain succès',
       'https://cdn.pixabay.com/photo/2015/01/08/18/24/children-593313_1280.jpg',
